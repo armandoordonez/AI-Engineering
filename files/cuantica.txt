@@ -1,0 +1,6 @@
+Max Planck introdujo en 1900 la idea de que la energía no se emite de manera continua, sino en cuantos discretos. Este fue el inicio de la teoría cuántica.
+Albert Einstein en 1905 explicó el efecto fotoeléctrico utilizando el concepto de cuantos de luz, lo que posteriormente llamó fotones.
+Niels Bohr en 1913 propuso su modelo atómico, donde los electrones orbitaban en niveles de energía cuantizados alrededor del núcleo.
+Werner Heisenberg enunció en 1927 el principio de incertidumbre, que indica que no es posible conocer con precisión la posición y el momento de una partícula al mismo tiempo.
+Erwin Schrödinger desarrolló la ecuación de onda en 1926, fundamental para describir el comportamiento cuántico de las partículas.
+Richard Feynman contribuyó a la electrodinámica cuántica y popularizó el uso de diagramas que llevan su nombre.
