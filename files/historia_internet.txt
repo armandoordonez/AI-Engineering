@@ -1,0 +1,16 @@
+La historia de Internet comenzó en la década de 1960 como un proyecto militar en Estados Unidos llamado ARPANET. 
+Este sistema buscaba garantizar la comunicación entre computadoras incluso en caso de ataques. 
+En 1969 se realizó la primera conexión entre la Universidad de California en Los Ángeles (UCLA) y el Instituto de Investigación de Stanford.
+
+Durante los años 70, se desarrollaron los protocolos TCP/IP, que se convirtieron en la base de Internet tal como lo conocemos hoy. 
+El 1 de enero de 1983, ARPANET adoptó oficialmente TCP/IP, marcando el nacimiento formal de Internet.
+
+En 1989, Tim Berners-Lee, un científico del CERN, propuso la World Wide Web (WWW), que permitió enlazar documentos a través de hipervínculos y facilitar la navegación en línea. 
+El primer sitio web se publicó en 1991.
+
+En la década de 1990, Internet se expandió a nivel global y aparecieron los primeros navegadores gráficos, como Mosaic y Netscape. 
+Esto permitió que personas sin conocimientos técnicos pudieran acceder a la red.
+
+Con el tiempo, surgieron motores de búsqueda como Yahoo y Google, redes sociales como Facebook, Twitter e Instagram, y servicios de comercio electrónico como Amazon y eBay, transformando la comunicación, la información y la economía mundial.
+
+Hoy en día, Internet es esencial en la vida cotidiana, desde la educación y el entretenimiento hasta el trabajo remoto y la inteligencia artificial, conectando a miles de millones de personas alrededor del mundo.
