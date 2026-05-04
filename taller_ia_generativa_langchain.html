@@ -1,0 +1,1081 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Sora:wght@300;400;600;700&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: var(--color-background-primary);
+    --bg2: var(--color-background-secondary);
+    --bg3: var(--color-background-tertiary);
+    --text: var(--color-text-primary);
+    --text2: var(--color-text-secondary);
+    --border: var(--color-border-tertiary);
+    --border2: var(--color-border-secondary);
+    --accent: #1D9E75;
+    --accent-light: #E1F5EE;
+    --accent-dark: #085041;
+    --purple: #534AB7;
+    --purple-light: #EEEDFE;
+    --amber: #BA7517;
+    --amber-light: #FAEEDA;
+    --coral: #993C1D;
+    --coral-light: #FAECE7;
+    --mono: 'JetBrains Mono', monospace;
+    --sans: 'Sora', sans-serif;
+  }
+
+  body {
+    font-family: var(--sans);
+    background: transparent;
+    color: var(--text);
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  .container { max-width: 760px; margin: 0 auto; padding: 1.5rem 1rem; }
+
+  .header {
+    text-align: center;
+    padding: 2rem 1rem 1.5rem;
+    border-bottom: 0.5px solid var(--border2);
+    margin-bottom: 1.5rem;
+  }
+  .header-badge {
+    display: inline-block;
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 99px;
+    margin-bottom: 0.75rem;
+  }
+  .header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  .header p {
+    font-size: 14px;
+    color: var(--text2);
+    line-height: 1.6;
+  }
+
+  /* Progress bar */
+  .progress-wrap {
+    background: var(--bg2);
+    border: 0.5px solid var(--border);
+    border-radius: var(--border-radius-lg);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .progress-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .progress-top span { font-size: 13px; color: var(--text2); }
+  .progress-top strong { font-size: 13px; color: var(--text); }
+  .progress-bar {
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 3px;
+    transition: width 0.5s ease;
+  }
+  .phase-dots {
+    display: flex;
+    gap: 6px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .phase-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--border2);
+    transition: background 0.3s;
+  }
+  .phase-dot.done { background: var(--accent); }
+  .phase-dot.active { background: var(--purple); }
+
+  /* Phase nav */
+  .phase-nav {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  .phase-btn {
+    padding: 6px 12px;
+    border: 0.5px solid var(--border2);
+    border-radius: 99px;
+    background: var(--bg);
+    color: var(--text2);
+    font-family: var(--sans);
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .phase-btn:hover { background: var(--bg2); color: var(--text); }
+  .phase-btn.active {
+    background: var(--purple-light);
+    color: var(--purple);
+    border-color: var(--purple);
+    font-weight: 600;
+  }
+  .phase-btn.completed {
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    border-color: var(--accent);
+  }
+
+  /* Section card */
+  .section-card {
+    background: var(--bg);
+    border: 0.5px solid var(--border);
+    border-radius: var(--border-radius-lg);
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 0.5px solid var(--border);
+  }
+  .section-icon {
+    width: 32px; height: 32px;
+    border-radius: var(--border-radius-md);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .icon-theory { background: var(--purple-light); }
+  .icon-code { background: var(--accent-light); }
+  .icon-quiz { background: var(--amber-light); }
+  .icon-congrats { background: var(--coral-light); }
+
+  .section-title { font-size: 15px; font-weight: 600; color: var(--text); }
+  .section-sub { font-size: 12px; color: var(--text2); margin-top: 2px; }
+
+  /* Theory content */
+  .theory-body { font-size: 14px; line-height: 1.75; color: var(--text2); }
+  .theory-body p { margin-bottom: 0.75rem; }
+  .theory-body strong { color: var(--text); font-weight: 600; }
+
+  .concept-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+    margin: 1rem 0;
+  }
+  .concept-pill {
+    background: var(--bg2);
+    border: 0.5px solid var(--border);
+    border-radius: var(--border-radius-md);
+    padding: 0.75rem;
+    font-size: 13px;
+  }
+  .concept-pill .cp-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text2);
+    margin-bottom: 4px;
+  }
+  .concept-pill .cp-val { color: var(--text); font-weight: 500; }
+
+  .tip-box {
+    background: var(--purple-light);
+    border-left: 3px solid var(--purple);
+    border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+    padding: 0.75rem 1rem;
+    font-size: 13px;
+    color: #3C3489;
+    margin: 0.75rem 0;
+    line-height: 1.6;
+  }
+
+  /* Code block */
+  .code-block {
+    background: #1a1a2e;
+    border-radius: var(--border-radius-md);
+    padding: 1rem 1.25rem;
+    margin: 0.75rem 0;
+    overflow-x: auto;
+    position: relative;
+  }
+  .code-block pre {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    line-height: 1.65;
+    color: #e0e0ff;
+    white-space: pre;
+  }
+  .code-kw { color: #c78af7; }
+  .code-str { color: #9ddf72; }
+  .code-cm { color: #6272a4; }
+  .code-fn { color: #61dafb; }
+  .code-var { color: #ffb86c; }
+  .code-num { color: #bd93f9; }
+
+  .code-copy {
+    position: absolute;
+    top: 8px; right: 8px;
+    background: rgba(255,255,255,0.08);
+    border: 0.5px solid rgba(255,255,255,0.15);
+    color: #aaa;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--mono);
+    transition: all 0.2s;
+  }
+  .code-copy:hover { background: rgba(255,255,255,0.15); color: #fff; }
+
+  /* Challenge textarea */
+  .challenge-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 6px;
+    display: block;
+  }
+  .challenge-desc {
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+    padding: 0.6rem 0.75rem;
+    border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+    color: var(--accent-dark);
+  }
+  textarea.code-input {
+    width: 100%;
+    min-height: 140px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    padding: 0.75rem 1rem;
+    background: #1a1a2e;
+    color: #e0e0ff;
+    border: 0.5px solid rgba(255,255,255,0.15);
+    border-radius: var(--border-radius-md);
+    resize: vertical;
+    outline: none;
+    line-height: 1.6;
+  }
+  textarea.code-input:focus {
+    border-color: var(--purple);
+  }
+  .validate-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    padding: 8px 16px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-md);
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .validate-btn:hover { opacity: 0.85; }
+  .feedback-box {
+    margin-top: 8px;
+    padding: 0.6rem 0.75rem;
+    border-radius: var(--border-radius-md);
+    font-size: 13px;
+    line-height: 1.5;
+    display: none;
+  }
+  .feedback-ok { background: var(--accent-light); color: var(--accent-dark); display: block; }
+  .feedback-err { background: var(--coral-light); color: var(--coral); display: block; }
+  .feedback-partial { background: var(--amber-light); color: var(--amber); display: block; }
+
+  /* Quiz */
+  .quiz-q { font-size: 14px; font-weight: 500; color: var(--text); margin-bottom: 0.6rem; }
+  .quiz-options { display: flex; flex-direction: column; gap: 6px; margin-bottom: 1rem; }
+  .quiz-opt {
+    padding: 9px 12px;
+    border: 0.5px solid var(--border2);
+    border-radius: var(--border-radius-md);
+    background: var(--bg2);
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--text);
+    text-align: left;
+    font-family: var(--sans);
+    transition: all 0.15s;
+    line-height: 1.5;
+  }
+  .quiz-opt:hover { border-color: var(--purple); background: var(--purple-light); color: var(--purple); }
+  .quiz-opt.correct { background: var(--accent-light); border-color: var(--accent); color: var(--accent-dark); }
+  .quiz-opt.wrong { background: var(--coral-light); border-color: var(--coral); color: var(--coral); }
+  .quiz-opt.reveal-correct { background: var(--accent-light); border-color: var(--accent); color: var(--accent-dark); }
+  .quiz-opt:disabled { cursor: default; }
+  .quiz-explanation {
+    font-size: 13px;
+    color: var(--text2);
+    line-height: 1.6;
+    padding: 0.6rem 0.75rem;
+    background: var(--bg2);
+    border-radius: var(--border-radius-md);
+    border-left: 3px solid var(--border2);
+    margin-bottom: 0.75rem;
+    display: none;
+  }
+
+  /* Phase complete */
+  .complete-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--accent);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-md);
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .complete-btn:hover { opacity: 0.85; }
+  .complete-btn:disabled { opacity: 0.4; cursor: default; }
+
+  .score-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--text2);
+    margin-bottom: 0.5rem;
+  }
+  .score-badge {
+    display: inline-block;
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    font-weight: 700;
+    font-size: 13px;
+    padding: 2px 8px;
+    border-radius: 99px;
+  }
+
+  /* Final */
+  .final-card {
+    background: linear-gradient(135deg, var(--purple-light) 0%, var(--accent-light) 100%);
+    border: 0.5px solid var(--border2);
+    border-radius: var(--border-radius-lg);
+    padding: 2rem;
+    text-align: center;
+  }
+  .final-card h2 { font-size: 22px; font-weight: 700; margin-bottom: 0.5rem; }
+  .final-card p { font-size: 14px; color: var(--text2); }
+
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+  <div class="header-badge">Taller práctico · LangChain + IA Generativa</div>
+  <h1>De prompts a sistemas RAG</h1>
+  <p>Cinco fases progresivas: aprende, codifica y demuestra tu comprensión en cada etapa.</p>
+</div>
+
+<div class="progress-wrap">
+  <div class="progress-top">
+    <span>Progreso total</span>
+    <strong id="progress-label">0 / 5 fases</strong>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+  <div class="phase-dots" id="phase-dots"></div>
+</div>
+
+<div class="phase-nav" id="phase-nav"></div>
+
+<div id="phase-content"></div>
+
+</div>
+
+<script>
+const PHASES = [
+  {
+    id: 0,
+    title: "Prompt Engineering",
+    icon: "✦",
+    color: "purple",
+    theory: {
+      intro: `<strong>Prompt Engineering</strong> es el arte de diseñar instrucciones precisas para modelos de lenguaje. Un buen prompt no es una pregunta casual: es una especificación estructurada que guía al modelo hacia la respuesta deseada.`,
+      concepts: [
+        { label: "Técnica", val: "Zero-shot" },
+        { label: "Técnica", val: "Few-shot" },
+        { label: "Técnica", val: "Chain-of-Thought" },
+        { label: "Componente", val: "Rol / Persona" },
+        { label: "Componente", val: "Contexto" },
+        { label: "Componente", val: "Restricciones" },
+      ],
+      body: `Un prompt bien estructurado tiene cuatro partes: <strong>rol</strong> (quién es el modelo), <strong>contexto</strong> (información de fondo), <strong>tarea</strong> (qué hacer) y <strong>formato</strong> (cómo entregar la respuesta). La técnica <em>Chain-of-Thought</em> le pide al modelo que razone paso a paso, lo que mejora notablemente la precisión en tareas complejas.`,
+      tip: "Regla de oro: si no puedes explicarle la tarea a un humano nuevo en 3 oraciones, tu prompt tampoco será claro para el modelo."
+    },
+    code: {
+      title: "Reto de código — Prompt con roles y few-shot",
+      desc: "Escribe un prompt en Python usando LangChain que: (1) asigne rol de experto contable, (2) incluya 2 ejemplos few-shot de cálculo de IVA, (3) pida al modelo calcular el IVA de $350.000 al 19%.",
+      starter: `from langchain_core.prompts import ChatPromptTemplate, FewShotChatMessagePromptTemplate
+
+examples = [
+    # TODO: agrega 2 ejemplos de few-shot aquí
+    # {"input": "...", "output": "..."},
+]
+
+# TODO: crea el few_shot_prompt usando FewShotChatMessagePromptTemplate
+
+# TODO: crea el prompt final con rol de experto contable
+# Usa: ChatPromptTemplate.from_messages([...])
+
+# TODO: formatea el prompt con el valor a calcular
+`,
+      keywords: ["FewShotChatMessagePromptTemplate", "ChatPromptTemplate", "from_messages", "examples"],
+      solution_hint: "Debes usar FewShotChatMessagePromptTemplate para los ejemplos y ChatPromptTemplate.from_messages() para el prompt final con el rol de sistema."
+    },
+    quiz: [
+      {
+        q: "¿Cuál técnica de prompting le pide al modelo que muestre su razonamiento paso a paso?",
+        opts: ["Zero-shot prompting", "Few-shot prompting", "Chain-of-Thought prompting", "Template prompting"],
+        correct: 2,
+        exp: "Chain-of-Thought (CoT) es la técnica donde se instruye al modelo para que razone explícitamente antes de dar la respuesta final. Mejora resultados en matemáticas y lógica."
+      },
+      {
+        q: "En LangChain, ¿qué clase se usa para crear plantillas de prompts con mensajes de sistema, humano y AI?",
+        opts: ["PromptTemplate", "ChatPromptTemplate", "FewShotPromptTemplate", "MessageTemplate"],
+        correct: 1,
+        exp: "ChatPromptTemplate.from_messages() es el estándar para construir prompts con múltiples roles en LangChain cuando se trabaja con modelos de chat."
+      },
+      {
+        q: "¿Qué ventaja principal tiene el few-shot prompting sobre el zero-shot?",
+        opts: [
+          "Requiere menos tokens por respuesta",
+          "No necesita acceso a internet",
+          "Guía al modelo con ejemplos del formato esperado",
+          "Funciona sin modelo de lenguaje"
+        ],
+        correct: 2,
+        exp: "Los ejemplos en few-shot muestran al modelo el patrón de entrada-salida esperado, reduciendo ambigüedades y mejorando la consistencia del formato."
+      }
+    ]
+  },
+  {
+    id: 1,
+    title: "Chains con LCEL",
+    icon: "⛓",
+    color: "teal",
+    theory: {
+      intro: `<strong>LCEL</strong> (LangChain Expression Language) es la forma moderna de componer cadenas en LangChain. Usa el operador <code>|</code> para conectar componentes de forma declarativa, tipo pipeline de Unix.`,
+      concepts: [
+        { label: "Operador", val: "pipe ( | )" },
+        { label: "Tipo", val: "Runnable" },
+        { label: "Método", val: ".invoke()" },
+        { label: "Método", val: ".stream()" },
+        { label: "Método", val: ".batch()" },
+        { label: "Clase", val: "RunnableParallel" },
+      ],
+      body: `Todo en LCEL implementa la interfaz <strong>Runnable</strong>. Una chain básica tiene la forma: <code>prompt | llm | output_parser</code>. Se pueden añadir pasos intermedios, bifurcaciones con RunnableParallel, o condiciones con RunnableBranch. El método <code>.stream()</code> permite transmitir tokens en tiempo real para mejor UX.`,
+      tip: "Con LCEL puedes depurar cada paso de la cadena invocando el componente aislado. Si algo falla, prueba cada Runnable por separado."
+    },
+    code: {
+      title: "Reto de código — Chain de análisis de sentimiento",
+      desc: "Construye una LCEL chain que: (1) reciba un texto de reseña, (2) analice el sentimiento usando un LLM, (3) parsee la salida a JSON con campos: sentiment (positivo/negativo/neutro) y score (0-1). Usa StrOutputParser o JsonOutputParser.",
+      starter: `from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import JsonOutputParser
+from langchain_openai import ChatOpenAI
+
+# TODO: define el prompt para análisis de sentimiento
+# Debe pedir JSON con campos: sentiment y score
+
+# TODO: instancia el modelo (puedes usar ChatOpenAI o ChatAnthropic)
+
+# TODO: crea el parser apropiado
+
+# TODO: construye la chain usando el operador |
+# chain = prompt | llm | parser
+
+# TODO: invoca la chain con una reseña de prueba
+# result = chain.invoke({"review": "Este producto es increíble!"})
+# print(result)
+`,
+      keywords: ["chain", "|", "JsonOutputParser", "invoke", "prompt"],
+      solution_hint: "La chain debe ser: prompt | llm | JsonOutputParser(). Asegúrate de que el prompt pida explícitamente JSON con los campos 'sentiment' y 'score'."
+    },
+    quiz: [
+      {
+        q: "¿Qué operador se usa en LCEL para conectar componentes Runnable?",
+        opts: [">>", "+", "|", "->"],
+        correct: 2,
+        exp: "El operador | (pipe) es el núcleo de LCEL. Conecta cualquier objeto que implemente la interfaz Runnable, creando un pipeline de transformación de datos."
+      },
+      {
+        q: "¿Cuál método de LCEL permite procesar múltiples inputs simultáneamente?",
+        opts: [".invoke()", ".stream()", ".batch()", ".run()"],
+        correct: 2,
+        exp: ".batch() procesa una lista de inputs en paralelo, lo que es ideal para procesar conjuntos de documentos o múltiples consultas a la vez."
+      },
+      {
+        q: "¿Qué clase de LCEL permite ejecutar múltiples chains en paralelo y combinar sus salidas?",
+        opts: ["RunnableSequence", "RunnableParallel", "RunnableBranch", "RunnableMap"],
+        correct: 1,
+        exp: "RunnableParallel ejecuta múltiples Runnables al mismo tiempo con el mismo input y devuelve un diccionario con los resultados de cada uno, ideal para enriquecer respuestas."
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "Memoria y Agentes",
+    icon: "◈",
+    color: "amber",
+    theory: {
+      intro: `Los <strong>agentes</strong> en LangChain son sistemas que usan un LLM para decidir qué herramientas ejecutar y en qué orden. La <strong>memoria</strong> permite que los sistemas recuerden el historial de conversación.`,
+      concepts: [
+        { label: "Tipo", val: "ConversationBufferMemory" },
+        { label: "Tipo", val: "ConversationSummaryMemory" },
+        { label: "Agente", val: "ReAct" },
+        { label: "Agente", val: "Tool-calling" },
+        { label: "Concepto", val: "Tool / Herramienta" },
+        { label: "Concepto", val: "AgentExecutor" },
+      ],
+      body: `Un agente sigue el ciclo <strong>Reason → Act → Observe</strong> (ReAct). En cada iteración, el LLM razona qué herramienta usar, la ejecuta y observa el resultado hasta tener suficiente información para responder. Las herramientas pueden ser búsqueda web, calculadoras, APIs o funciones Python personalizadas decoradas con <code>@tool</code>.`,
+      tip: "Prefiere ConversationSummaryMemory para conversaciones largas: resume el historial automáticamente y evita exceder el límite de contexto del modelo."
+    },
+    code: {
+      title: "Reto de código — Agente con herramienta personalizada",
+      desc: "Crea un agente ReAct que tenga acceso a una herramienta 'calcular_descuento' que reciba precio y porcentaje y retorne el precio final. El agente debe poder responder consultas como '¿Cuánto pago por $500.000 con 15% de descuento?'",
+      starter: `from langchain.agents import AgentExecutor, create_react_agent
+from langchain_core.tools import tool
+from langchain_core.prompts import PromptTemplate
+from langchain_openai import ChatOpenAI
+
+# TODO: define la herramienta con el decorador @tool
+# La función debe recibir precio (float) y descuento (float)
+# y retornar el precio final como string
+
+# TODO: crea la lista de tools
+
+# TODO: define el prompt ReAct (usa hub.pull("hwchase17/react") o créalo manual)
+
+# TODO: inicializa el LLM
+
+# TODO: crea el agente y el AgentExecutor
+
+# TODO: ejecuta una consulta de prueba
+`,
+      keywords: ["@tool", "AgentExecutor", "create_react_agent", "tools"],
+      solution_hint: "Usa @tool para decorar tu función. El AgentExecutor necesita agent=create_react_agent(llm, tools, prompt) y tools=tools como parámetros."
+    },
+    quiz: [
+      {
+        q: "¿Qué ciclo de razonamiento sigue el agente tipo ReAct?",
+        opts: [
+          "Read → Analyze → Create",
+          "Reason → Act → Observe",
+          "Retrieve → Augment → Complete",
+          "Request → API → Transform"
+        ],
+        correct: 1,
+        exp: "ReAct (Reason + Act) es un framework donde el agente alterna entre razonar sobre qué hacer, ejecutar una acción con una herramienta, y observar el resultado antes de continuar."
+      },
+      {
+        q: "¿Qué tipo de memoria es más eficiente para conversaciones muy largas?",
+        opts: [
+          "ConversationBufferMemory",
+          "ConversationWindowMemory",
+          "ConversationSummaryMemory",
+          "ConversationEntityMemory"
+        ],
+        correct: 2,
+        exp: "ConversationSummaryMemory resume el historial usando el propio LLM, manteniendo solo un resumen compacto en lugar de todos los mensajes, lo que evita superar el límite de contexto."
+      },
+      {
+        q: "¿Cómo se registra una función Python como herramienta en LangChain moderno?",
+        opts: [
+          "Usando StructuredTool.from_function()",
+          "Usando el decorador @tool",
+          "Heredando de la clase BaseTool",
+          "Todas las anteriores son válidas"
+        ],
+        correct: 3,
+        exp: "Las tres formas son válidas en LangChain. @tool es la más concisa para funciones simples, StructuredTool.from_function() da más control, y heredar de BaseTool es el enfoque más flexible."
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "RAG básico",
+    icon: "◉",
+    color: "coral",
+    theory: {
+      intro: `<strong>RAG</strong> (Retrieval-Augmented Generation) combina búsqueda semántica con generación de texto. El modelo accede a documentos externos en tiempo real en lugar de depender solo de su conocimiento de entrenamiento.`,
+      concepts: [
+        { label: "Paso", val: "Document Loading" },
+        { label: "Paso", val: "Text Splitting" },
+        { label: "Paso", val: "Embedding" },
+        { label: "Paso", val: "Vector Store" },
+        { label: "Paso", val: "Retrieval" },
+        { label: "Paso", val: "Generation" },
+      ],
+      body: `El pipeline RAG tiene dos fases: <strong>indexación</strong> (cargar docs → dividir → embeder → almacenar) y <strong>consulta</strong> (embeder pregunta → buscar docs similares → incluir en prompt → generar). Los <em>embeddings</em> son representaciones vectoriales del texto que permiten medir similitud semántica. <strong>FAISS</strong> y <strong>Chroma</strong> son las vector stores más populares para proyectos locales.`,
+      tip: "El chunk_size y chunk_overlap del TextSplitter son críticos. Chunks muy pequeños pierden contexto; muy grandes pierden precisión en el retrieval. Empieza con 512 tokens y overlap del 20%."
+    },
+    code: {
+      title: "Reto de código — Pipeline RAG sobre PDF",
+      desc: "Construye un RAG completo que: (1) cargue un PDF con PyPDFLoader, (2) lo divida con RecursiveCharacterTextSplitter, (3) cree embeddings y almacene en Chroma, (4) cree un retriever, (5) construya una chain de Q&A con contexto.",
+      starter: `from langchain_community.document_loaders import PyPDFLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain_community.vectorstores import Chroma
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.runnables import RunnablePassthrough
+
+# === FASE DE INDEXACIÓN ===
+# TODO: carga el PDF (usa cualquier path de prueba)
+
+# TODO: divide los documentos
+# Parámetros sugeridos: chunk_size=512, chunk_overlap=100
+
+# TODO: crea los embeddings e inicializa Chroma
+
+# === FASE DE CONSULTA ===
+# TODO: crea el retriever desde la vector store
+
+# TODO: define el prompt de Q&A que incluya {context} y {question}
+
+# TODO: construye la RAG chain usando LCEL
+# Sugerencia: {"context": retriever, "question": RunnablePassthrough()} | prompt | llm
+
+# TODO: prueba con una pregunta
+`,
+      keywords: ["PyPDFLoader", "RecursiveCharacterTextSplitter", "Chroma", "retriever", "RunnablePassthrough"],
+      solution_hint: "La chain RAG típica es: {'context': retriever | format_docs, 'question': RunnablePassthrough()} | prompt | llm | StrOutputParser(). No olvides una función format_docs que concatene el page_content de los docs."
+    },
+    quiz: [
+      {
+        q: "¿Por qué es necesario dividir los documentos en chunks antes de indexarlos en RAG?",
+        opts: [
+          "Para reducir el costo de almacenamiento",
+          "Porque los modelos de embedding tienen límite de tokens y los retrievers necesitan fragmentos manejables",
+          "Para que el modelo pueda memorizar el documento completo",
+          "Porque Chroma no acepta documentos completos"
+        ],
+        correct: 1,
+        exp: "Los modelos de embedding tienen un límite de tokens (típicamente 512-8192). Además, chunks más pequeños mejoran la precisión del retrieval al recuperar solo la sección relevante."
+      },
+      {
+        q: "¿Qué representa un 'embedding' en el contexto de RAG?",
+        opts: [
+          "Un archivo de configuración del modelo",
+          "Un vector numérico de alta dimensión que representa el significado semántico de un texto",
+          "El texto original dividido en tokens",
+          "La respuesta generada por el LLM"
+        ],
+        correct: 1,
+        exp: "Un embedding es una representación vectorial (lista de números) que captura el significado semántico del texto. Textos similares en significado tienen vectores cercanos en el espacio vectorial."
+      },
+      {
+        q: "En una RAG chain con LCEL, ¿para qué sirve RunnablePassthrough()?",
+        opts: [
+          "Para hacer pausa entre pasos",
+          "Para pasar el input original sin modificarlo al siguiente paso",
+          "Para limpiar el output del LLM",
+          "Para reintentar en caso de error"
+        ],
+        correct: 1,
+        exp: "RunnablePassthrough() actúa como un pipe que deja pasar el valor sin transformarlo. Es útil para mantener la pregunta original disponible en un RunnableParallel mientras otro branch hace el retrieval."
+      }
+    ]
+  },
+  {
+    id: 4,
+    title: "RAG avanzado + MCD",
+    icon: "◆",
+    color: "blue",
+    theory: {
+      intro: `En producción, un RAG básico no es suficiente. Las técnicas avanzadas mejoran la calidad del retrieval: <strong>reranking</strong>, <strong>query expansion</strong>, <strong>HyDE</strong> y la integración con <strong>MCD</strong> (Model Context Protocol) para datos externos en tiempo real.`,
+      concepts: [
+        { label: "Técnica", val: "HyDE" },
+        { label: "Técnica", val: "Query Expansion" },
+        { label: "Técnica", val: "Reranking" },
+        { label: "Técnica", val: "Self-RAG" },
+        { label: "Protocolo", val: "MCD / MCP" },
+        { label: "Patrón", val: "Corrective RAG" },
+      ],
+      body: `<strong>HyDE</strong> (Hypothetical Document Embeddings) genera un documento hipotético que respondería la pregunta y lo usa como query de búsqueda — mejora el recall cuando la pregunta y los documentos tienen vocabulario diferente. <strong>Query Expansion</strong> genera múltiples variantes de la pregunta para aumentar cobertura. <strong>MCD/MCP</strong> permite que el agente consuma herramientas y fuentes de datos externas con un protocolo estandarizado, conectando RAG con APIs, bases de datos y servicios en vivo.`,
+      tip: "Para producción: usa un reranker cross-encoder (como Cohere Rerank o bge-reranker) después del retrieval inicial. Recupera 20 chunks y reranquea a los top-5. La mejora de calidad suele ser del 20-40%."
+    },
+    code: {
+      title: "Reto de código — RAG con HyDE + Reranking",
+      desc: "Implementa un pipeline RAG avanzado con: (1) HyDE: genera un documento hipotético antes de buscar, (2) recupera top-10 chunks, (3) aplica un reranker (puedes simular con un LLM que puntúa relevancia), (4) usa solo los top-3 para generar la respuesta final.",
+      starter: `from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_community.vectorstores import Chroma
+from langchain_core.runnables import RunnableLambda, RunnablePassthrough
+
+llm = ChatOpenAI(model="gpt-4o-mini")
+embeddings = OpenAIEmbeddings()
+vectorstore = Chroma(embedding_function=embeddings)
+
+# === PASO 1: HyDE ===
+# TODO: crea un prompt que genere un documento hipotético
+# que respondería la pregunta dada
+
+# TODO: crea la hyde_chain: hyde_prompt | llm | StrOutputParser()
+
+# === PASO 2: Retrieval con el doc hipotético ===
+# TODO: crea un retriever que use el doc hipotético como query
+# Hint: usa RunnableLambda para invocar el retriever con el hyde output
+
+# === PASO 3: Reranker (LLM-based) ===
+def rerank_docs(docs_and_query: dict) -> list:
+    # TODO: usa el LLM para puntuar cada doc de 0-10 según relevancia
+    # Retorna los top-3 documentos ordenados por puntuación
+    pass
+
+# === PASO 4: Chain final ===
+# TODO: une todo: pregunta → HyDE → retrieval → reranking → generación
+`,
+      keywords: ["HyDE", "rerank", "RunnableLambda", "hyde_chain", "top"],
+      solution_hint: "La cadena es: query → hyde_chain (genera doc hipotético) → retriever.invoke(hyde_doc) → rerank_docs(docs, query) → prompt_final | llm. Puedes usar RunnableLambda para funciones custom en LCEL."
+    },
+    quiz: [
+      {
+        q: "¿Qué problema resuelve HyDE en sistemas RAG?",
+        opts: [
+          "Reduce el costo de los embeddings",
+          "Mejora el retrieval cuando la pregunta y los documentos tienen vocabulario diferente",
+          "Elimina la necesidad de una vector store",
+          "Permite procesar documentos en tiempo real"
+        ],
+        correct: 1,
+        exp: "HyDE resuelve el 'vocabulary mismatch': el usuario pregunta de una forma, pero los documentos están escritos de otra. Al generar un documento hipotético, se crea un puente semántico entre ambos."
+      },
+      {
+        q: "¿Qué es MCP (Model Context Protocol) en el contexto de agentes IA?",
+        opts: [
+          "Un formato de archivo para guardar modelos entrenados",
+          "Un protocolo estandarizado para conectar LLMs con herramientas y fuentes de datos externas",
+          "Un método de compresión de vectores",
+          "Un algoritmo de chunking avanzado"
+        ],
+        correct: 1,
+        exp: "MCP es un protocolo abierto (de Anthropic) que estandariza cómo los LLMs se conectan a herramientas externas como APIs, bases de datos, editores y servicios. Permite ecosistemas de herramientas reutilizables."
+      },
+      {
+        q: "¿En qué se diferencia un reranker cross-encoder de una búsqueda por similaridad coseno?",
+        opts: [
+          "El cross-encoder es más rápido pero menos preciso",
+          "El cross-encoder evalúa query y documento juntos en el mismo modelo, logrando mayor precisión pero mayor costo computacional",
+          "El coseno funciona solo con texto en inglés",
+          "No hay diferencia funcional entre los dos"
+        ],
+        correct: 1,
+        exp: "La similitud coseno compara vectores pre-computados (rápido, escalable). El cross-encoder procesa query + documento juntos, capturando interacciones sutiles entre ellos. Es más preciso pero más lento, ideal para reranking después de un retrieval inicial."
+      }
+    ]
+  }
+];
+
+// State
+const state = {
+  currentPhase: 0,
+  completedPhases: new Set(),
+  codeAnswers: {},
+  quizAnswers: {},
+  quizScores: {}
+};
+
+function updateProgress() {
+  const done = state.completedPhases.size;
+  const total = PHASES.length;
+  document.getElementById('progress-label').textContent = `${done} / ${total} fases`;
+  document.getElementById('progress-fill').style.width = `${(done/total)*100}%`;
+  const dots = document.getElementById('phase-dots');
+  dots.innerHTML = PHASES.map((p, i) => {
+    let cls = 'phase-dot';
+    if (state.completedPhases.has(i)) cls += ' done';
+    else if (i === state.currentPhase) cls += ' active';
+    return `<div class="${cls}" title="${p.title}"></div>`;
+  }).join('');
+}
+
+function renderNav() {
+  const nav = document.getElementById('phase-nav');
+  nav.innerHTML = PHASES.map((p, i) => {
+    let cls = 'phase-btn';
+    if (i === state.currentPhase) cls += ' active';
+    if (state.completedPhases.has(i)) cls += ' completed';
+    const prefix = state.completedPhases.has(i) ? '✓ ' : `${i+1}. `;
+    return `<button class="${cls}" onclick="goToPhase(${i})">${prefix}${p.title}</button>`;
+  }).join('');
+}
+
+function goToPhase(i) {
+  state.currentPhase = i;
+  renderNav();
+  renderPhase(i);
+  updateProgress();
+}
+
+function renderPhase(idx) {
+  const p = PHASES[idx];
+  const isComplete = state.completedPhases.has(idx);
+  const quizScore = state.quizScores[idx];
+  
+  let html = `
+    <!-- Theory -->
+    <div class="section-card">
+      <div class="section-header">
+        <div class="section-icon icon-theory">${p.icon}</div>
+        <div>
+          <div class="section-title">Fase ${idx+1}: ${p.title}</div>
+          <div class="section-sub">Teoría y conceptos clave</div>
+        </div>
+      </div>
+      <div class="theory-body">
+        <p>${p.theory.intro}</p>
+        <div class="concept-grid">
+          ${p.theory.concepts.map(c => `<div class="concept-pill"><div class="cp-label">${c.label}</div><div class="cp-val">${c.val}</div></div>`).join('')}
+        </div>
+        <p>${p.theory.body}</p>
+        <div class="tip-box">💡 ${p.theory.tip}</div>
+      </div>
+    </div>
+
+    <!-- Code Challenge -->
+    <div class="section-card">
+      <div class="section-header">
+        <div class="section-icon icon-code">⌨</div>
+        <div>
+          <div class="section-title">${p.code.title}</div>
+          <div class="section-sub">Reto de programación</div>
+        </div>
+      </div>
+      <div class="challenge-desc">${p.code.desc}</div>
+      <span class="challenge-label">Starter code:</span>
+      <div class="code-block" style="position:relative">
+        <button class="code-copy" onclick="copyStarter(${idx})">copiar</button>
+        <pre>${escapeCode(p.code.starter)}</pre>
+      </div>
+      <span class="challenge-label" style="margin-top:0.75rem">Tu solución:</span>
+      <textarea class="code-input" id="code-${idx}" placeholder="# Escribe tu código aquí...">${state.codeAnswers[idx] || ''}</textarea>
+      <button class="validate-btn" onclick="validateCode(${idx})">▶ Verificar código</button>
+      <div class="feedback-box" id="code-feedback-${idx}"></div>
+    </div>
+
+    <!-- Quiz -->
+    <div class="section-card">
+      <div class="section-header">
+        <div class="section-icon icon-quiz">?</div>
+        <div>
+          <div class="section-title">Preguntas de comprensión</div>
+          <div class="section-sub">Responde todas para desbloquear la siguiente fase</div>
+        </div>
+      </div>
+      ${p.quiz.map((q, qi) => renderQuestion(idx, qi, q)).join('')}
+      ${quizScore !== undefined ? `
+        <div class="score-row">
+          <span>Puntuación del quiz</span>
+          <span class="score-badge">${quizScore}/${p.quiz.length} correctas</span>
+        </div>
+      ` : ''}
+    </div>
+
+    <!-- Complete -->
+    <div class="section-card" id="complete-card-${idx}">
+      <button class="complete-btn" id="complete-btn-${idx}" onclick="completePhase(${idx})" ${isComplete ? 'disabled' : ''}>
+        ${isComplete ? '✓ Fase completada' : idx === PHASES.length-1 ? '🎓 Finalizar taller' : '→ Completar fase y continuar'}
+      </button>
+    </div>
+  `;
+  
+  document.getElementById('phase-content').innerHTML = html;
+  
+  // Restore quiz state
+  if (state.quizAnswers[idx]) {
+    const ans = state.quizAnswers[idx];
+    p.quiz.forEach((q, qi) => {
+      if (ans[qi] !== undefined) {
+        markQuizAnswer(idx, qi, ans[qi], q.correct);
+        showExplanation(idx, qi, q.exp);
+      }
+    });
+  }
+}
+
+function renderQuestion(phaseIdx, qi, q) {
+  return `
+    <div style="margin-bottom: 1.25rem">
+      <p class="quiz-q">${qi+1}. ${q.q}</p>
+      <div class="quiz-options" id="opts-${phaseIdx}-${qi}">
+        ${q.opts.map((o, oi) => `
+          <button class="quiz-opt" id="opt-${phaseIdx}-${qi}-${oi}" 
+            onclick="selectAnswer(${phaseIdx}, ${qi}, ${oi}, ${q.correct})">
+            ${String.fromCharCode(65+oi)}. ${o}
+          </button>
+        `).join('')}
+      </div>
+      <div class="quiz-explanation" id="exp-${phaseIdx}-${qi}">${q.exp}</div>
+    </div>
+  `;
+}
+
+function selectAnswer(phaseIdx, qi, oi, correct) {
+  if (state.quizAnswers[phaseIdx] && state.quizAnswers[phaseIdx][qi] !== undefined) return;
+  if (!state.quizAnswers[phaseIdx]) state.quizAnswers[phaseIdx] = {};
+  state.quizAnswers[phaseIdx][qi] = oi;
+  markQuizAnswer(phaseIdx, qi, oi, correct);
+  showExplanation(phaseIdx, qi, PHASES[phaseIdx].quiz[qi].exp);
+  checkQuizComplete(phaseIdx);
+}
+
+function markQuizAnswer(phaseIdx, qi, oi, correct) {
+  const opts = document.querySelectorAll(`#opts-${phaseIdx}-${qi} .quiz-opt`);
+  opts.forEach(btn => btn.disabled = true);
+  if (oi === correct) {
+    document.getElementById(`opt-${phaseIdx}-${qi}-${oi}`).classList.add('correct');
+  } else {
+    document.getElementById(`opt-${phaseIdx}-${qi}-${oi}`).classList.add('wrong');
+    document.getElementById(`opt-${phaseIdx}-${qi}-${correct}`).classList.add('reveal-correct');
+  }
+}
+
+function showExplanation(phaseIdx, qi, text) {
+  const el = document.getElementById(`exp-${phaseIdx}-${qi}`);
+  if (el) { el.style.display = 'block'; }
+}
+
+function checkQuizComplete(phaseIdx) {
+  const p = PHASES[phaseIdx];
+  const ans = state.quizAnswers[phaseIdx] || {};
+  if (Object.keys(ans).length === p.quiz.length) {
+    let score = 0;
+    p.quiz.forEach((q, qi) => { if (ans[qi] === q.correct) score++; });
+    state.quizScores[phaseIdx] = score;
+  }
+}
+
+function validateCode(idx) {
+  const code = document.getElementById(`code-${idx}`).value.trim();
+  state.codeAnswers[idx] = code;
+  const fb = document.getElementById(`code-feedback-${idx}`);
+  fb.className = 'feedback-box';
+  
+  if (!code || code.length < 30) {
+    fb.className = 'feedback-box feedback-err';
+    fb.textContent = '⚠ El código parece incompleto. Desarrolla tu solución antes de verificar.';
+    return;
+  }
+  
+  const kws = PHASES[idx].code.keywords;
+  const found = kws.filter(kw => code.includes(kw));
+  const pct = found.length / kws.length;
+  
+  if (pct >= 0.75) {
+    fb.className = 'feedback-box feedback-ok';
+    fb.textContent = `✓ ¡Bien! Se detectaron los elementos clave (${found.join(', ')}). Revisa que tu código ejecute correctamente en tu entorno local.`;
+  } else if (pct >= 0.4) {
+    fb.className = 'feedback-box feedback-partial';
+    fb.textContent = `⚡ Parcialmente completo. Detectados: ${found.join(', ')}. Falta incluir: ${kws.filter(k => !code.includes(k)).join(', ')}. Pista: ${PHASES[idx].code.solution_hint}`;
+  } else {
+    fb.className = 'feedback-box feedback-err';
+    fb.textContent = `✗ No se detectaron los elementos requeridos. Pista: ${PHASES[idx].code.solution_hint}`;
+  }
+}
+
+function copyStarter(idx) {
+  const text = PHASES[idx].code.starter;
+  navigator.clipboard.writeText(text).catch(() => {});
+  const btn = event.target;
+  btn.textContent = '✓ copiado';
+  setTimeout(() => btn.textContent = 'copiar', 1500);
+}
+
+function completePhase(idx) {
+  state.completedPhases.add(idx);
+  updateProgress();
+  renderNav();
+  
+  if (idx < PHASES.length - 1) {
+    goToPhase(idx + 1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    showFinal();
+  }
+}
+
+function showFinal() {
+  const totalQ = PHASES.reduce((sum, p) => sum + p.quiz.length, 0);
+  const totalCorrect = Object.keys(state.quizScores).reduce((sum, idx) => sum + (state.quizScores[idx] || 0), 0);
+  document.getElementById('phase-content').innerHTML = `
+    <div class="final-card">
+      <div style="font-size:40px; margin-bottom:0.75rem">🎓</div>
+      <h2>¡Taller completado!</h2>
+      <p style="margin-bottom:1rem">Has recorrido las 5 fases del taller de IA Generativa con LangChain.</p>
+      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin:1.25rem 0">
+        <div style="background:var(--bg); border:0.5px solid var(--border); border-radius:var(--border-radius-md); padding:0.75rem 1.25rem; min-width:120px">
+          <div style="font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:0.06em">Quiz score</div>
+          <div style="font-size:22px;font-weight:700;color:var(--accent)">${totalCorrect}/${totalQ}</div>
+        </div>
+        <div style="background:var(--bg); border:0.5px solid var(--border); border-radius:var(--border-radius-md); padding:0.75rem 1.25rem; min-width:120px">
+          <div style="font-size:11px;color:var(--text2);text-transform:uppercase;letter-spacing:0.06em">Fases</div>
+          <div style="font-size:22px;font-weight:700;color:var(--purple)">${PHASES.length}/${PHASES.length}</div>
+        </div>
+      </div>
+      <p style="font-size:13px; color:var(--text2); line-height:1.7">Siguiente paso: implementa un proyecto completo integrando RAG avanzado + agentes + MCP. ¡El ecosistema LangChain tiene mucho más por explorar!</p>
+    </div>
+  `;
+}
+
+function escapeCode(str) {
+  return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// Init
+function init() {
+  updateProgress();
+  renderNav();
+  renderPhase(0);
+}
+
+init();
+</script>
+</body>
+</html>
