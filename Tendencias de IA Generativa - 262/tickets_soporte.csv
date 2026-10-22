@@ -1,0 +1,244 @@
+﻿ticket_id,fecha,canal,ciudad,producto,categoria,monto_cop,horas_resolucion,satisfaccion,texto
+T0001,2026-04-22,web,Bucaramanga,bicicleta Trek,envio,,42.6,4,Compré bicicleta Trek hace 19 días y aún no me llega. Nadie me da razón del envío.
+T0002,27/06/2026,redes_sociales,Medellín,portátil Lenovo IdeaPad,envio,2450000,13.9,2,"Gracias por la rapidez con el envío de portátil Lenovo IdeaPad, llegó antes de lo prometido."
+T0003,2026-02-10,redes_sociales,Medellín,lavadora LG WM3900,calidad,1890000,92.5,5,lavadora LG WM3900 llegó con un defecto de fábrica. Pagué $1.890.000. Quiero cambio o reembolso.
+T0004,2026-04-16,redes_sociales,Barranquilla,audífonos Sony WH-1000XM5,calidad,1150000,39.5,3,El empaque de audífonos Sony WH-1000XM5 llegó golpeado y el producto tiene rayones. Pagué $1.150.000.
+T0005,2026-08-20,tienda,Cali,zapatos Nike Air Max,envio,,41.4,5,Compré zapatos Nike Air Max hace 18 días y aún no me llega. Nadie me da razón del envío.
+T0006,2026-05-25,telefono,Barranquilla,licuadora Oster,calidad,180000,41.4,5,"Excelente calidad de licuadora Oster, superó lo que esperaba. Pagué $180.000."
+T0007,28/08/2026,telefono,Barranquilla,zapatos Nike Air Max,envio,520000,6.2,4,"Gracias por la rapidez con el envío de zapatos Nike Air Max, llegó antes de lo prometido."
+T0008,2026-03-12,telefono,Cartagena,suscripción Spotify Premium,facturacion,16900,3.9,2,Solicito el certificado de pagos de suscripción Spotify Premium del último año.
+T0009,2026-07-15,app,Bucaramanga,portal web de pedidos,soporte_tecnico,,33.2,4,portal web de pedidos dejó de funcionar desde ayer y trabajo desde casa. Es urgente.
+T0010,2026-02-13,app,Cartagena,bicicleta Trek,envio,3200000,67.3,4,Compré bicicleta Trek hace 13 días y aún no me llega. Nadie me da razón del envío.
+T0011,24/07/2026,tienda,Bogotá,plan de internet hogar,facturacion,99000,45.6,3,Quiero cancelar plan de internet hogar y me siguen cobrando. Pagué $99.000. Es la 6a vez que escribo.
+T0012,2026-01-11,tienda,Medellín,router WiFi,soporte_tecnico,210000,20.5,4,"Excelente servicio, el técnico resolvió el problema de router WiFi en menos de una hora. Muchas gracias."
+T0013,2026-05-02,redes_sociales,barranquilla,televisor Samsung QLED 55 pulgadas,calidad,2600000,29.0,,televisor Samsung QLED 55 pulgadas se dañó a los 12 meses de uso. Pagué $2.600.000. Ya escribí varias veces y no responden.
+T0014,2026-05-08,telefono,Bogotá,tienda física Cali,otro,,7.8,1,Quisiera saber cómo funciona tienda física Cali y qué condiciones tiene.
+T0015,2026-03-13,redes_sociales,Bucaramanga,seguro de garantía extendida,facturacion,120000,34.2,3,Me cobraron dos veces seguro de garantía extendida este mes. Pagué $120.000. Necesito que me devuelvan uno de los cobros.
+T0016,2026-08-17,app,Bogotá,router WiFi,soporte_tecnico,210000,18.5,4,La router WiFi se cierra sola cada vez que intento usarla. Tengo pagos pendientes hoy.
+T0017,2026-07-16,telefono,Medellín,suscripción Netflix,facturacion,32900,22.3,2,Mi factura de suscripción Netflix llegó con un valor distinto al de mi plan. Pagué $32.900. Por favor revisen el cobro.
+T0018,2026-07-08,telefono,Medellín,celular Samsung Galaxy,envio,1799000,999.0,,El pedido de celular Samsung Galaxy llegó 13 días tarde. Pagué $1.799.000. Quisiera saber por qué no me avisaron.
+T0019,2026-01-21,redes_sociales,Medellín,programa de puntos,otro,,38.6,4,Quisiera saber cómo funciona programa de puntos y qué condiciones tiene.
+T0020,2026-08-29,telefono,Barranquilla,tarjeta de regalo,otro,150000,15.0,4,Quisiera saber cómo funciona tarjeta de regalo y qué condiciones tiene. Pagué $150.000.
+T0021,2026-08-02,web,Medellín,portal web de pedidos,soporte_tecnico,,10.5,5,"No logro configurar portal web de pedidos, ¿me pueden guiar paso a paso?"
+T0022,2026-02-24,redes_sociales,Bucaramanga,celular Samsung Galaxy,envio,1799000,26.1,,Necesito cambiar la dirección de entrega de mi celular Samsung Galaxy antes de que salga hoy. Pagué $1.799.000.
+T0023,2026-04-13,redes_sociales,Bogotá,plan de datos móvil,facturacion,59900,10.4,4,Me cobraron dos veces plan de datos móvil este mes. Pagué $59.900. Necesito que me devuelvan uno de los cobros.
+T0024,2026-03-16,redes_sociales,Cali,monitor Dell U2723,calidad,1300000,21.9,4,"Excelente calidad de monitor Dell U2723, superó lo que esperaba. Pagué $1.300.000."
+T0025,2026-06-22,app,Cali,portal web de pedidos,soporte_tecnico,,60.3,5,"Excelente servicio, el técnico resolvió el problema de portal web de pedidos en menos de una hora. Muchas gracias."
+T0026,2026-07-26,telefono,Barranquilla,garantía de electrodomésticos,otro,,15.9,2,Tengo una duda sobre garantía de electrodomésticos: ¿aplica para compras anteriores?
+T0027,2026-08-01,telefono,Cali,silla ergonómica,envio,650000,63.3,2,"Gracias por la rapidez con el envío de silla ergonómica, llegó antes de lo prometido."
+T0028,2026-05-21,redes_sociales,Bucaramanga,plan de datos móvil,facturacion,59900,25.3,1,Mi factura de plan de datos móvil llegó con un valor distinto al de mi plan. Pagué $59.900. Por favor revisen el cobro.
+T0029,2026-07-12,app,Medellín,zapatos Nike Air Max,envio,520000,33.9,5,"Gracias por la rapidez con el envío de zapatos Nike Air Max, llegó antes de lo prometido. Pagué $520.000."
+T0030,2026-08-10,app,Bucaramanga,programa de puntos,otro,,25.7,4,Tengo una duda sobre programa de puntos: ¿aplica para compras anteriores?
+T0031,2026-08-09,web,Bogotá,plan de internet hogar,facturacion,99000,15.8,1,Mi factura de plan de internet hogar llegó con un valor distinto al de mi plan. Pagué $99.000. Por favor revisen el cobro.
+T0032,2026-04-13,redes_sociales,Barranquilla,garantía de electrodomésticos,otro,,13.4,,¿Me pueden confirmar el horario de atención de garantía de electrodomésticos?
+T0033,2026-01-27,tienda,Barranquilla,nevecón Haceb,envio,,106.5,3,"Gracias por la rapidez con el envío de nevecón Haceb, llegó antes de lo prometido."
+T0034,2026-07-19,redes_sociales,Barranquilla,plan de internet hogar,facturacion,99000,36.0,3,Mi factura de plan de internet hogar llegó con un valor distinto al de mi plan. Pagué $99.000. Por favor revisen el cobro.
+T0035,2026-03-15,telefono,Bogotá,televisor Samsung QLED 55 pulgadas,calidad,2600000,42.0,2,El empaque de televisor Samsung QLED 55 pulgadas llegó golpeado y el producto tiene rayones.
+T0036,2026-04-02,tienda,Cartagena,monitor Dell U2723,calidad,1300000,19.7,2,El empaque de monitor Dell U2723 llegó golpeado y el producto tiene rayones. Pagué $1.300.000.
+T0037,2026-01-08,web,Barranquilla,plan de datos móvil,facturacion,,7.9,2,Me cobraron dos veces plan de datos móvil este mes. Necesito que me devuelvan uno de los cobros.
+T0038,2026-01-10,app,Bucaramanga,zapatos Nike Air Max,envio,520000,100.0,3,Compré zapatos Nike Air Max hace 12 días y aún no me llega. Nadie me da razón del envío.
+T0039,2026-02-27,web,Cartagena,suscripción Spotify Premium,facturacion,16900,23.4,2,Me cobraron dos veces suscripción Spotify Premium este mes. Necesito que me devuelvan uno de los cobros.
+T0040,2026-08-27,telefono,Medellín,celular Samsung Galaxy,envio,1799000,18.1,3,Compré celular Samsung Galaxy hace 9 días y aún no me llega. Pagué $1.799.000. Nadie me da razón del envío.
+T0041,2026-08-01,web,Cartagena,router WiFi,soporte_tecnico,210000,7.5,3,"No logro configurar router WiFi, ¿me pueden guiar paso a paso?"
+T0042,2026-08-12,web,Medellín,router WiFi,soporte_tecnico,,20.6,4,"Excelente servicio, el técnico resolvió el problema de router WiFi en menos de una hora. Muchas gracias."
+T0043,2026-05-19,redes_sociales,Bogotá,programa de puntos,otro,,66.5,4,Quisiera saber cómo funciona programa de puntos y qué condiciones tiene.
+T0044,2026-05-29,redes_sociales,Cartagena,zapatos Nike Air Max,envio,520000,89.7,3,Necesito cambiar la dirección de entrega de mi zapatos Nike Air Max antes de que salga hoy. Pagué $520.000.
+T0045,2026-01-21,app,Cartagena,bicicleta Trek,envio,3200000,13.8,5,El pedido de bicicleta Trek llegó 20 días tarde. Pagué $3.200.000. Quisiera saber por qué no me avisaron.
+T0046,2026-01-13,app,Cali,televisor Samsung QLED 55 pulgadas,calidad,2600000,12.3,5,televisor Samsung QLED 55 pulgadas se dañó a los 19 meses de uso. Pagué $2.600.000. Ya escribí varias veces y no responden.
+T0047,2026-01-07,app,Medellín,aplicación móvil del banco,soporte_tecnico,,8.8,3,aplicación móvil del banco dejó de funcionar desde ayer y trabajo desde casa. Es urgente.
+T0048,2026-08-07,tienda,Barranquilla,router WiFi,soporte_tecnico,210000,34.5,1,"No logro configurar router WiFi, ¿me pueden guiar paso a paso?"
+T0049,2026-09-02,web,Cartagena,monitor Dell U2723,calidad,1300000,27.8,,"Excelente calidad de monitor Dell U2723, superó lo que esperaba."
+T0050,2026-01-13,redes_sociales,Cartagena,silla ergonómica,envio,650000,21.5,3,"Gracias por la rapidez con el envío de silla ergonómica, llegó antes de lo prometido."
+T0051,29/05/2026,redes_sociales,Cartagena,plan de datos móvil,facturacion,59900,11.9,3,Quiero cancelar plan de datos móvil y me siguen cobrando. Pagué $59.900. Es la 6a vez que escribo.
+T0052,2026-08-04,web,Cali,plan de datos móvil,facturacion,59900,20.9,5,Me cobraron dos veces plan de datos móvil este mes. Pagué $59.900. Necesito que me devuelvan uno de los cobros.
+T0053,2026-01-11,web,BARRANQUILLA,suscripción Netflix,facturacion,32900,10.9,,Solicito el certificado de pagos de suscripción Netflix del último año.
+T0054,2026-07-08,telefono,Bogotá,audífonos Sony WH-1000XM5,calidad,1150000,6.7,3,audífonos Sony WH-1000XM5 llegó con un defecto de fábrica. Quiero cambio o reembolso.
+T0055,2026-06-05,telefono,CARTAGENA,seguro de garantía extendida,facturacion,120000,19.2,3,Mi factura de seguro de garantía extendida llegó con un valor distinto al de mi plan. Pagué $120.000. Por favor revisen el cobro.
+T0056,2026-01-12,app,Bucaramanga,bicicleta Trek,envio,3200000,5.2,3,Necesito cambiar la dirección de entrega de mi bicicleta Trek antes de que salga hoy. Pagué $3.200.000.
+T0057,2026-07-31,telefono,bogotá,licuadora Oster,calidad,180000,53.6,,licuadora Oster se dañó a los 5 meses de uso. Ya escribí varias veces y no responden.
+T0058,04/02/2026,web,Cartagena,zapatos Nike Air Max,envio,520000,58.3,,Compré zapatos Nike Air Max hace 19 días y aún no me llega. Nadie me da razón del envío.
+T0059,2026-01-18,telefono,bogotá,programa de puntos,otro,,14.9,,Tengo una duda sobre programa de puntos: ¿aplica para compras anteriores?
+T0060,2026-03-08,web,BOGOTÁ,silla ergonómica,envio,650000,20.0,2,El pedido de silla ergonómica llegó 19 días tarde. Pagué $650.000. Quisiera saber por qué no me avisaron.
+T0061,2026-05-16,telefono,Cartagena,suscripción Netflix,facturacion,32900,33.5,3,Mi factura de suscripción Netflix llegó con un valor distinto al de mi plan. Pagué $32.900. Por favor revisen el cobro.
+T0062,2026-07-01,tienda,Cali,zapatos Nike Air Max,envio,520000,31.0,5,El pedido de zapatos Nike Air Max llegó 6 días tarde. Pagué $520.000. Quisiera saber por qué no me avisaron.
+T0063,2026-06-22,redes_sociales,Medellín,lavadora LG WM3900,calidad,1890000,14.3,4,"Excelente calidad de lavadora LG WM3900, superó lo que esperaba. Pagué $1.890.000."
+T0064,2026-08-30,tienda,Bogotá,silla ergonómica,envio,,54.2,3,Compré silla ergonómica hace 12 días y aún no me llega. Nadie me da razón del envío.
+T0065,2026-09-04,tienda,Bogotá,zapatos Nike Air Max,envio,520000,11.8,5,Compré zapatos Nike Air Max hace 15 días y aún no me llega. Pagué $520.000. Nadie me da razón del envío.
+T0066,2026-08-11,tienda,Medellín,audífonos Sony WH-1000XM5,calidad,1150000,16.6,3,audífonos Sony WH-1000XM5 se dañó a los 4 meses de uso. Pagué $1.150.000. Ya escribí varias veces y no responden.
+T0067,2026-03-02,telefono,Cali,nevecón Haceb,envio,2890000,6.9,1,El pedido de nevecón Haceb llegó 8 días tarde. Pagué $2.890.000. Quisiera saber por qué no me avisaron.
+T0068,2026-05-24,tienda,Bucaramanga,monitor Dell U2723,calidad,1300000,10.7,,monitor Dell U2723 se dañó a los 19 meses de uso. Pagué $1.300.000. Ya escribí varias veces y no responden.
+T0069,2026-06-30,tienda,Bucaramanga,televisor Samsung QLED 55 pulgadas,calidad,,9.4,,El empaque de televisor Samsung QLED 55 pulgadas llegó golpeado y el producto tiene rayones.
+T0070,2026-04-06,telefono,Barranquilla,silla ergonómica,envio,650000,37.1,4,Necesito cambiar la dirección de entrega de mi silla ergonómica antes de que salga hoy.
+T0071,2026-08-16,tienda,Barranquilla,aplicación móvil del banco,soporte_tecnico,,11.0,5,"No logro configurar aplicación móvil del banco, ¿me pueden guiar paso a paso?"
+T0072,2026-03-03,web,Cali,plan de datos móvil,facturacion,59900,16.0,1,Me cobraron dos veces plan de datos móvil este mes. Necesito que me devuelvan uno de los cobros.
+T0073,2026-02-01,app,Bucaramanga,portátil Lenovo IdeaPad,envio,2450000,54.4,3,Necesito cambiar la dirección de entrega de mi portátil Lenovo IdeaPad antes de que salga hoy. Pagué $2.450.000.
+T0074,2026-08-30,web,Cartagena,nevecón Haceb,envio,2890000,3.5,,El pedido de nevecón Haceb llegó 5 días tarde. Pagué $2.890.000. Quisiera saber por qué no me avisaron.
+T0075,2026-01-19,web,Cartagena,suscripción Spotify Premium,facturacion,16900,16.5,,Solicito el certificado de pagos de suscripción Spotify Premium del último año.
+T0076,2026-03-14,tienda,Bogotá,plan de internet hogar,facturacion,,36.1,,Me cobraron dos veces plan de internet hogar este mes. Necesito que me devuelvan uno de los cobros.
+T0077,2026-03-27,telefono,Bucaramanga,router WiFi,soporte_tecnico,210000,3.2,3,"Excelente servicio, el técnico resolvió el problema de router WiFi en menos de una hora. Muchas gracias."
+T0078,30/04/2026,redes_sociales,Bucaramanga,plan de datos móvil,facturacion,59900,14.7,,Mi factura de plan de datos móvil llegó con un valor distinto al de mi plan. Pagué $59.900. Por favor revisen el cobro.
+T0079,12/06/2026,tienda,Medellín,lavadora LG WM3900,calidad,1890000,18.7,,lavadora LG WM3900 llegó con un defecto de fábrica. Pagué $1.890.000. Quiero cambio o reembolso.
+T0080,2026-07-14,web,Medellín,licuadora Oster,calidad,180000,15.8,3,El empaque de licuadora Oster llegó golpeado y el producto tiene rayones. Pagué $180.000.
+T0081,2026-07-23,app,Cali,portal web de pedidos,soporte_tecnico,,15.3,5,portal web de pedidos dejó de funcionar desde ayer y trabajo desde casa. Es urgente.
+T0082,2026-05-03,tienda,bucaramanga,silla ergonómica,envio,,5.9,2,Necesito cambiar la dirección de entrega de mi silla ergonómica antes de que salga hoy.
+T0083,2026-06-06,tienda,Medellín,silla ergonómica,envio,,7.4,3,Compré silla ergonómica hace 4 días y aún no me llega. Nadie me da razón del envío.
+T0084,2026-02-18,app,Bucaramanga,portátil Lenovo IdeaPad,envio,2450000,31.5,,"Gracias por la rapidez con el envío de portátil Lenovo IdeaPad, llegó antes de lo prometido. Pagué $2.450.000."
+T0085,2026-04-27,web,Bogotá,portal web de pedidos,soporte_tecnico,,17.8,2,portal web de pedidos dejó de funcionar desde ayer y trabajo desde casa. Es urgente.
+T0086,2026-01-26,redes_sociales,Medellín,aplicación móvil del banco,soporte_tecnico,,22.2,4,"No logro configurar aplicación móvil del banco, ¿me pueden guiar paso a paso?"
+T0087,2026-02-19,telefono,Barranquilla,zapatos Nike Air Max,envio,520000,7.8,4,"Gracias por la rapidez con el envío de zapatos Nike Air Max, llegó antes de lo prometido. Pagué $520.000."
+T0088,2026-06-15,tienda,Cali,zapatos Nike Air Max,envio,520000,31.1,3,Necesito cambiar la dirección de entrega de mi zapatos Nike Air Max antes de que salga hoy.
+T0089,2026-01-25,web,Cartagena,suscripción Spotify Premium,facturacion,16900,-4.0,5,Mi factura de suscripción Spotify Premium llegó con un valor distinto al de mi plan. Pagué $16.900. Por favor revisen el cobro.
+T0090,04/09/2026,tienda,Cali,celular Samsung Galaxy,envio,,21.1,5,Compré celular Samsung Galaxy hace 8 días y aún no me llega. Nadie me da razón del envío.
+T0091,2026-07-10,telefono,Cali,licuadora Oster,calidad,180000,19.5,3,licuadora Oster se dañó a los 20 meses de uso. Ya escribí varias veces y no responden.
+T0092,2026-06-19,redes_sociales,Barranquilla,nevecón Haceb,envio,2890000,41.8,,Necesito cambiar la dirección de entrega de mi nevecón Haceb antes de que salga hoy. Pagué $2.890.000.
+T0093,2026-02-08,web,Barranquilla,zapatos Nike Air Max,envio,520000,13.8,4,"Gracias por la rapidez con el envío de zapatos Nike Air Max, llegó antes de lo prometido. Pagué $520.000."
+T0094,2026-08-04,redes_sociales,Barranquilla,licuadora Oster,calidad,180000,8.1,5,El empaque de licuadora Oster llegó golpeado y el producto tiene rayones. Pagué $180.000.
+T0095,19/08/2026,app,Medellín,suscripción Spotify Premium,facturacion,16900,9.5,4,Solicito el certificado de pagos de suscripción Spotify Premium del último año.
+T0096,2026-02-24,tienda,Bogotá,lavadora LG WM3900,calidad,,10.9,1,lavadora LG WM3900 llegó con un defecto de fábrica. Quiero cambio o reembolso.
+T0097,2026-07-04,telefono,Cartagena,router WiFi,soporte_tecnico,,7.2,4,"Excelente servicio, el técnico resolvió el problema de router WiFi en menos de una hora. Muchas gracias."
+T0098,29/08/2026,redes_sociales,MEDELLÍN,portátil Lenovo IdeaPad,envio,2450000,15.1,3,El pedido de portátil Lenovo IdeaPad llegó 20 días tarde. Pagué $2.450.000. Quisiera saber por qué no me avisaron.
+T0099,2026-05-20,tienda,Barranquilla,garantía de electrodomésticos,otro,,6.5,3,Quisiera saber cómo funciona garantía de electrodomésticos y qué condiciones tiene.
+T0100,2026-06-17,web,Cali,audífonos Sony WH-1000XM5,calidad,1150000,15.5,,audífonos Sony WH-1000XM5 llegó con un defecto de fábrica. Quiero cambio o reembolso.
+T0101,2026-02-28,web,Bucaramanga,suscripción Spotify Premium,facturacion,16900,18.7,4,Mi factura de suscripción Spotify Premium llegó con un valor distinto al de mi plan. Pagué $16.900. Por favor revisen el cobro.
+T0102,2026-04-20,web,Cali,impresora HP LaserJet,soporte_tecnico,,14.3,,impresora HP LaserJet dejó de funcionar desde ayer y trabajo desde casa. Es urgente.
+T0103,2026-03-28,redes_sociales,Cali,nevecón Haceb,envio,2890000,12.2,4,Compré nevecón Haceb hace 2 días y aún no me llega. Pagué $2.890.000. Nadie me da razón del envío.
+T0104,2026-04-25,tienda,Bogotá,portátil Lenovo IdeaPad,envio,,17.3,,Compré portátil Lenovo IdeaPad hace 6 días y aún no me llega. Nadie me da razón del envío.
+T0105,2026-06-06,web,bucaramanga,plan de datos móvil,facturacion,59900,27.2,4,Solicito el certificado de pagos de plan de datos móvil del último año.
+T0106,12/04/2026,web,Cali,impresora HP LaserJet,soporte_tecnico,780000,21.7,4,impresora HP LaserJet dejó de funcionar desde ayer y trabajo desde casa. Es urgente.
+T0107,2026-01-22,telefono,Barranquilla,monitor Dell U2723,calidad,1300000,12.4,2,"Excelente calidad de monitor Dell U2723, superó lo que esperaba. Pagué $1.300.000."
+T0108,2026-02-07,app,Cartagena,televisor Samsung QLED 55 pulgadas,calidad,2600000,40.1,3,"Excelente calidad de televisor Samsung QLED 55 pulgadas, superó lo que esperaba. Pagué $2.600.000."
+T0109,2026-01-11,app,Cartagena,plan de internet hogar,facturacion,,27.4,5,Me cobraron dos veces plan de internet hogar este mes. Necesito que me devuelvan uno de los cobros.
+T0110,04/07/2026,redes_sociales,Cartagena,nevecón Haceb,envio,2890000,34.5,4,El pedido de nevecón Haceb llegó 16 días tarde. Pagué $2.890.000. Quisiera saber por qué no me avisaron.
+T0111,2026-08-28,app,Cartagena,monitor Dell U2723,calidad,1300000,25.5,3,monitor Dell U2723 llegó con un defecto de fábrica. Pagué $1.300.000. Quiero cambio o reembolso.
+T0112,2026-06-22,redes_sociales,Cali,plan de datos móvil,facturacion,59900,11.0,4,Solicito el certificado de pagos de plan de datos móvil del último año.
+T0113,2026-04-20,telefono,Cartagena,suscripción Spotify Premium,facturacion,16900,12.1,3,Mi factura de suscripción Spotify Premium llegó con un valor distinto al de mi plan. Pagué $16.900. Por favor revisen el cobro.
+T0114,2026-08-16,tienda,Cartagena,zapatos Nike Air Max,envio,520000,15.9,3,El pedido de zapatos Nike Air Max llegó 12 días tarde. Pagué $520.000. Quisiera saber por qué no me avisaron.
+T0115,2026-01-26,redes_sociales,Medellín,silla ergonómica,envio,,8.3,,"Gracias por la rapidez con el envío de silla ergonómica, llegó antes de lo prometido."
+T0116,2026-02-04,app,Cali,licuadora Oster,calidad,180000,17.4,2,licuadora Oster llegó con un defecto de fábrica. Pagué $180.000. Quiero cambio o reembolso.
+T0117,2026-03-18,redes_sociales,Bogotá,zapatos Nike Air Max,envio,520000,21.0,4,Compré zapatos Nike Air Max hace 4 días y aún no me llega. Pagué $520.000. Nadie me da razón del envío.
+T0118,13/04/2026,redes_sociales,Bogotá,zapatos Nike Air Max,envio,520000,76.9,2,"Gracias por la rapidez con el envío de zapatos Nike Air Max, llegó antes de lo prometido. Pagué $520.000."
+T0119,2026-05-06,telefono,Medellín,impresora HP LaserJet,soporte_tecnico,780000,19.7,2,La impresora HP LaserJet se cierra sola cada vez que intento usarla. Tengo pagos pendientes hoy.
+T0120,2026-08-10,tienda,Cartagena,zapatos Nike Air Max,envio,520000,75.2,5,Necesito cambiar la dirección de entrega de mi zapatos Nike Air Max antes de que salga hoy. Pagué $520.000.
+T0121,2026-01-31,tienda,Medellín,suscripción Spotify Premium,facturacion,16900,13.1,3,Quiero cancelar suscripción Spotify Premium y me siguen cobrando. Es la 16a vez que escribo.
+T0122,2026-03-08,tienda,Cartagena,celular Samsung Galaxy,envio,1799000,10.3,3,Compré celular Samsung Galaxy hace 9 días y aún no me llega. Pagué $1.799.000. Nadie me da razón del envío.
+T0123,2026-04-21,app,Cali,suscripción Spotify Premium,facturacion,16900,35.5,4,Solicito el certificado de pagos de suscripción Spotify Premium del último año.
+T0124,2026-05-17,redes_sociales,Cartagena,impresora HP LaserJet,soporte_tecnico,780000,24.0,,impresora HP LaserJet dejó de funcionar desde ayer y trabajo desde casa. Es urgente.
+T0125,2026-01-17,redes_sociales,Bucaramanga,suscripción Spotify Premium,facturacion,16900,24.7,3,Mi factura de suscripción Spotify Premium llegó con un valor distinto al de mi plan. Pagué $16.900. Por favor revisen el cobro.
+T0126,2026-04-23,web,Cali,suscripción Spotify Premium,facturacion,16900,24.8,4,Me cobraron dos veces suscripción Spotify Premium este mes. Pagué $16.900. Necesito que me devuelvan uno de los cobros.
+T0127,2026-03-16,web,Bogotá,monitor Dell U2723,calidad,,20.5,2,monitor Dell U2723 se dañó a los 18 meses de uso. Ya escribí varias veces y no responden.
+T0128,2026-03-19,redes_sociales,Cartagena,impresora HP LaserJet,soporte_tecnico,780000,7.9,,"Excelente servicio, el técnico resolvió el problema de impresora HP LaserJet en menos de una hora. Muchas gracias."
+T0129,2026-08-16,redes_sociales,Cartagena,nevecón Haceb,envio,2890000,10.2,3,Compré nevecón Haceb hace 8 días y aún no me llega. Nadie me da razón del envío.
+T0130,2026-02-21,web,Bogotá,tienda física Cali,otro,,33.2,2,¿Me pueden confirmar el horario de atención de tienda física Cali?
+T0131,2026-02-01,web,Bucaramanga,zapatos Nike Air Max,envio,520000,17.1,5,Compré zapatos Nike Air Max hace 17 días y aún no me llega. Pagué $520.000. Nadie me da razón del envío.
+T0132,2026-05-17,web,Bogotá,plan de internet hogar,facturacion,99000,13.3,5,Quiero cancelar plan de internet hogar y me siguen cobrando. Pagué $99.000. Es la 20a vez que escribo.
+T0133,2026-03-24,tienda,Cartagena,lavadora LG WM3900,calidad,1890000,47.1,2,"Excelente calidad de lavadora LG WM3900, superó lo que esperaba."
+T0134,2026-01-09,tienda,Bucaramanga,licuadora Oster,calidad,180000,17.9,2,"Excelente calidad de licuadora Oster, superó lo que esperaba. Pagué $180.000."
+T0135,2026-01-25,web,Medellín,suscripción Spotify Premium,facturacion,16900,5.8,4,Quiero cancelar suscripción Spotify Premium y me siguen cobrando. Pagué $16.900. Es la 15a vez que escribo.
+T0136,2026-06-16,web,Cartagena,plan de datos móvil,facturacion,59900,24.1,,Solicito el certificado de pagos de plan de datos móvil del último año.
+T0137,2026-05-29,app,Cali,decodificador de TV,soporte_tecnico,,31.5,2,La decodificador de TV se cierra sola cada vez que intento usarla. Tengo pagos pendientes hoy.
+T0138,2026-05-13,redes_sociales,Medellín,portal web de pedidos,soporte_tecnico,,24.4,2,La portal web de pedidos se cierra sola cada vez que intento usarla. Tengo pagos pendientes hoy.
+T0139,2026-01-11,redes_sociales,Cali,plan de datos móvil,facturacion,59900,15.3,3,Mi factura de plan de datos móvil llegó con un valor distinto al de mi plan. Pagué $59.900. Por favor revisen el cobro.
+T0140,2026-05-25,telefono,Cali,impresora HP LaserJet,soporte_tecnico,780000,37.7,4,La impresora HP LaserJet se cierra sola cada vez que intento usarla. Tengo pagos pendientes hoy.
+T0141,26/06/2026,web,Cali,bicicleta Trek,envio,3200000,10.4,4,Necesito cambiar la dirección de entrega de mi bicicleta Trek antes de que salga hoy. Pagué $3.200.000.
+T0142,2026-05-14,web,Bucaramanga,programa de puntos,otro,,12.2,3,Tengo una duda sobre programa de puntos: ¿aplica para compras anteriores?
+T0143,2026-08-29,redes_sociales,Cali,plan de datos móvil,facturacion,59900,62.0,2,Quiero cancelar plan de datos móvil y me siguen cobrando. Pagué $59.900. Es la 4a vez que escribo.
+T0144,03/07/2026,telefono,BUCARAMANGA,monitor Dell U2723,calidad,1300000,39.2,1,monitor Dell U2723 se dañó a los 20 meses de uso. Pagué $1.300.000. Ya escribí varias veces y no responden.
+T0145,04/07/2026,web,Bogotá,suscripción Netflix,facturacion,,13.0,4,Me cobraron dos veces suscripción Netflix este mes. Necesito que me devuelvan uno de los cobros.
+T0146,2026-01-14,tienda,Cartagena,nevecón Haceb,envio,2890000,62.7,2,Necesito cambiar la dirección de entrega de mi nevecón Haceb antes de que salga hoy.
+T0147,2026-06-05,telefono,Barranquilla,suscripción Netflix,facturacion,32900,23.9,4,Solicito el certificado de pagos de suscripción Netflix del último año.
+T0148,11/04/2026,tienda,Cartagena,plan de datos móvil,facturacion,59900,44.2,5,Solicito el certificado de pagos de plan de datos móvil del último año.
+T0149,2026-01-26,telefono,Bucaramanga,suscripción Netflix,facturacion,32900,17.1,2,Solicito el certificado de pagos de suscripción Netflix del último año.
+T0150,2026-08-08,redes_sociales,Medellín,plan de internet hogar,facturacion,99000,23.2,3,Solicito el certificado de pagos de plan de internet hogar del último año.
+T0151,2026-07-06,redes_sociales,Cali,celular Samsung Galaxy,envio,1799000,12.8,,"Gracias por la rapidez con el envío de celular Samsung Galaxy, llegó antes de lo prometido."
+T0152,2026-02-27,telefono,Cali,aplicación móvil del banco,soporte_tecnico,,15.6,3,La aplicación móvil del banco se cierra sola cada vez que intento usarla. Tengo pagos pendientes hoy.
+T0153,2026-06-21,tienda,Medellín,router WiFi,soporte_tecnico,210000,20.5,4,"Excelente servicio, el técnico resolvió el problema de router WiFi en menos de una hora. Muchas gracias."
+T0154,2026-02-13,web,Barranquilla,zapatos Nike Air Max,envio,520000,19.8,1,Compré zapatos Nike Air Max hace 13 días y aún no me llega. Pagué $520.000. Nadie me da razón del envío.
+T0155,2026-09-05,redes_sociales,Medellín,portátil Lenovo IdeaPad,envio,2450000,36.0,3,"Gracias por la rapidez con el envío de portátil Lenovo IdeaPad, llegó antes de lo prometido. Pagué $2.450.000."
+T0156,07/07/2026,tienda,MEDELLÍN,aplicación móvil del banco,soporte_tecnico,,24.8,4,aplicación móvil del banco dejó de funcionar desde ayer y trabajo desde casa. Es urgente.
+T0157,2026-07-06,tienda,Cartagena,seguro de garantía extendida,facturacion,,29.3,3,Me cobraron dos veces seguro de garantía extendida este mes. Necesito que me devuelvan uno de los cobros.
+T0158,2026-02-24,tienda,Medellín,bicicleta Trek,envio,3200000,19.4,4,Necesito cambiar la dirección de entrega de mi bicicleta Trek antes de que salga hoy. Pagué $3.200.000.
+T0159,2026-08-07,tienda,cartagena,suscripción Netflix,facturacion,32900,24.6,,Quiero cancelar suscripción Netflix y me siguen cobrando. Pagué $32.900. Es la 4a vez que escribo.
+T0160,2026-03-03,telefono,Bogotá,plan de datos móvil,facturacion,59900,48.1,4,Quiero cancelar plan de datos móvil y me siguen cobrando. Pagué $59.900. Es la 7a vez que escribo.
+T0161,04/03/2026,app,Cartagena,audífonos Sony WH-1000XM5,calidad,1150000,55.5,5,audífonos Sony WH-1000XM5 se dañó a los 10 meses de uso. Pagué $1.150.000. Ya escribí varias veces y no responden.
+T0162,02/06/2026,telefono,Bucaramanga,celular Samsung Galaxy,envio,1799000,14.1,5,Necesito cambiar la dirección de entrega de mi celular Samsung Galaxy antes de que salga hoy.
+T0163,2026-02-01,tienda,barranquilla,televisor Samsung QLED 55 pulgadas,calidad,2600000,16.8,4,televisor Samsung QLED 55 pulgadas se dañó a los 19 meses de uso. Ya escribí varias veces y no responden.
+T0164,2026-05-20,web,Cartagena,silla ergonómica,envio,650000,27.6,3,El pedido de silla ergonómica llegó 15 días tarde. Pagué $650.000. Quisiera saber por qué no me avisaron.
+T0165,2026-05-06,tienda,Bucaramanga,zapatos Nike Air Max,envio,520000,9.6,3,El pedido de zapatos Nike Air Max llegó 9 días tarde. Pagué $520.000. Quisiera saber por qué no me avisaron.
+T0166,2026-03-26,tienda,Cali,celular Samsung Galaxy,envio,1799000,53.6,4,Necesito cambiar la dirección de entrega de mi celular Samsung Galaxy antes de que salga hoy. Pagué $1.799.000.
+T0167,2026-02-05,tienda,Medellín,portátil Lenovo IdeaPad,envio,2450000,14.5,3,Necesito cambiar la dirección de entrega de mi portátil Lenovo IdeaPad antes de que salga hoy. Pagué $2.450.000.
+T0168,2026-05-28,redes_sociales,CARTAGENA,bicicleta Trek,envio,3200000,87.1,4,Compré bicicleta Trek hace 13 días y aún no me llega. Pagué $3.200.000. Nadie me da razón del envío.
+T0169,2026-01-22,tienda,Barranquilla,portátil Lenovo IdeaPad,envio,2450000,6.5,2,"Gracias por la rapidez con el envío de portátil Lenovo IdeaPad, llegó antes de lo prometido. Pagué $2.450.000."
+T0170,2026-05-09,redes_sociales,Bogotá,licuadora Oster,calidad,180000,53.0,3,licuadora Oster se dañó a los 5 meses de uso. Pagué $180.000. Ya escribí varias veces y no responden.
+T0171,2026-09-06,tienda,Cali,seguro de garantía extendida,facturacion,120000,18.2,4,Me cobraron dos veces seguro de garantía extendida este mes. Pagué $120.000. Necesito que me devuelvan uno de los cobros.
+T0172,2026-04-28,web,Medellín,televisor Samsung QLED 55 pulgadas,calidad,2600000,49.1,5,televisor Samsung QLED 55 pulgadas se dañó a los 9 meses de uso. Pagué $2.600.000. Ya escribí varias veces y no responden.
+T0173,2026-08-29,app,Cartagena,bicicleta Trek,envio,3200000,9.2,4,El pedido de bicicleta Trek llegó 7 días tarde. Pagué $3.200.000. Quisiera saber por qué no me avisaron.
+T0174,2026-03-18,web,Bogotá,celular Samsung Galaxy,envio,1799000,40.1,3,"Gracias por la rapidez con el envío de celular Samsung Galaxy, llegó antes de lo prometido. Pagué $1.799.000."
+T0175,2026-07-14,tienda,Medellín,impresora HP LaserJet,soporte_tecnico,780000,54.8,,La impresora HP LaserJet se cierra sola cada vez que intento usarla. Tengo pagos pendientes hoy.
+T0176,2026-04-19,tienda,Bogotá,router WiFi,soporte_tecnico,210000,17.1,3,router WiFi dejó de funcionar desde ayer y trabajo desde casa. Es urgente.
+T0177,2026-04-16,web,Cali,decodificador de TV,soporte_tecnico,,25.0,2,"No logro configurar decodificador de TV, ¿me pueden guiar paso a paso?"
+T0178,2026-06-03,redes_sociales,Bogotá,licuadora Oster,calidad,180000,18.2,3,licuadora Oster se dañó a los 17 meses de uso. Ya escribí varias veces y no responden.
+T0179,2026-06-24,telefono,Barranquilla,nevecón Haceb,envio,2890000,180.3,3,"Gracias por la rapidez con el envío de nevecón Haceb, llegó antes de lo prometido. Pagué $2.890.000."
+T0180,2026-05-13,redes_sociales,Medellín,zapatos Nike Air Max,envio,520000,18.1,5,Necesito cambiar la dirección de entrega de mi zapatos Nike Air Max antes de que salga hoy. Pagué $520.000.
+T0181,2026-05-26,redes_sociales,MEDELLÍN,portal web de pedidos,soporte_tecnico,,37.9,4,"No logro configurar portal web de pedidos, ¿me pueden guiar paso a paso?"
+T0182,2026-03-25,telefono,CARTAGENA,zapatos Nike Air Max,envio,,22.0,4,El pedido de zapatos Nike Air Max llegó 7 días tarde. Quisiera saber por qué no me avisaron.
+T0183,2026-06-25,telefono,Bucaramanga,televisor Samsung QLED 55 pulgadas,calidad,2600000,16.5,3,"Excelente calidad de televisor Samsung QLED 55 pulgadas, superó lo que esperaba. Pagué $2.600.000."
+T0184,24/04/2026,web,Medellín,zapatos Nike Air Max,envio,520000,36.3,4,Compré zapatos Nike Air Max hace 4 días y aún no me llega. Pagué $520.000. Nadie me da razón del envío.
+T0185,2026-02-08,tienda,MEDELLÍN,monitor Dell U2723,calidad,1300000,34.1,3,monitor Dell U2723 se dañó a los 18 meses de uso. Pagué $1.300.000. Ya escribí varias veces y no responden.
+T0186,2026-02-01,telefono,bogotá,tarjeta de regalo,otro,150000,20.2,4,Quisiera saber cómo funciona tarjeta de regalo y qué condiciones tiene. Pagué $150.000.
+T0187,2026-05-18,telefono,Cartagena,impresora HP LaserJet,soporte_tecnico,780000,30.0,2,"No logro configurar impresora HP LaserJet, ¿me pueden guiar paso a paso?"
+T0188,2026-04-23,tienda,Medellín,plan de internet hogar,facturacion,,7.1,3,Mi factura de plan de internet hogar llegó con un valor distinto al de mi plan. Por favor revisen el cobro.
+T0189,2026-02-01,telefono,Bogotá,router WiFi,soporte_tecnico,,7.2,3,router WiFi dejó de funcionar desde ayer y trabajo desde casa. Es urgente.
+T0190,2026-02-13,tienda,Cartagena,aplicación móvil del banco,soporte_tecnico,,6.2,4,La aplicación móvil del banco se cierra sola cada vez que intento usarla. Tengo pagos pendientes hoy.
+T0191,2026-07-09,app,Medellín,seguro de garantía extendida,facturacion,120000,7.2,3,Me cobraron dos veces seguro de garantía extendida este mes. Necesito que me devuelvan uno de los cobros.
+T0192,2026-03-14,redes_sociales,Cartagena,zapatos Nike Air Max,envio,520000,28.0,3,Necesito cambiar la dirección de entrega de mi zapatos Nike Air Max antes de que salga hoy.
+T0193,2026-03-27,telefono,Medellín,nevecón Haceb,envio,2890000,28.9,4,Compré nevecón Haceb hace 20 días y aún no me llega. Pagué $2.890.000. Nadie me da razón del envío.
+T0194,2026-01-14,redes_sociales,Cartagena,garantía de electrodomésticos,otro,,65.4,4,¿Me pueden confirmar el horario de atención de garantía de electrodomésticos?
+T0195,2026-03-01,app,Cartagena,licuadora Oster,calidad,180000,20.9,3,El empaque de licuadora Oster llegó golpeado y el producto tiene rayones. Pagué $180.000.
+T0196,30/07/2026,telefono,Medellín,celular Samsung Galaxy,envio,1799000,55.0,4,Compré celular Samsung Galaxy hace 5 días y aún no me llega. Pagué $1.799.000. Nadie me da razón del envío.
+T0197,22/03/2026,telefono,Medellín,licuadora Oster,calidad,180000,55.5,5,"Excelente calidad de licuadora Oster, superó lo que esperaba. Pagué $180.000."
+T0198,2026-06-11,telefono,Bucaramanga,tienda física Cali,otro,,42.0,2,Tengo una duda sobre tienda física Cali: ¿aplica para compras anteriores?
+T0199,2026-01-16,telefono,Cali,portal web de pedidos,soporte_tecnico,,4.1,3,portal web de pedidos dejó de funcionar desde ayer y trabajo desde casa. Es urgente.
+T0200,2026-02-19,tienda,Medellín,portátil Lenovo IdeaPad,envio,2450000,7.1,3,El pedido de portátil Lenovo IdeaPad llegó 10 días tarde. Pagué $2.450.000. Quisiera saber por qué no me avisaron.
+T0201,2026-01-26,web,Cartagena,zapatos Nike Air Max,envio,520000,22.5,5,El pedido de zapatos Nike Air Max llegó 3 días tarde. Pagué $520.000. Quisiera saber por qué no me avisaron.
+T0202,2026-01-14,redes_sociales,Medellín,plan de internet hogar,facturacion,99000,18.2,4,Solicito el certificado de pagos de plan de internet hogar del último año.
+T0203,2026-06-27,telefono,Cartagena,portátil Lenovo IdeaPad,envio,2450000,10.9,4,Necesito cambiar la dirección de entrega de mi portátil Lenovo IdeaPad antes de que salga hoy. Pagué $2.450.000.
+T0204,2026-04-21,redes_sociales,Cali,bicicleta Trek,envio,3200000,8.2,3,Compré bicicleta Trek hace 8 días y aún no me llega. Pagué $3.200.000. Nadie me da razón del envío.
+T0205,2026-06-30,app,Medellín,monitor Dell U2723,calidad,,30.0,2,"Excelente calidad de monitor Dell U2723, superó lo que esperaba."
+T0206,2026-07-09,app,bucaramanga,portátil Lenovo IdeaPad,envio,2450000,14.4,3,"Gracias por la rapidez con el envío de portátil Lenovo IdeaPad, llegó antes de lo prometido."
+T0207,2026-04-08,app,Cali,nevecón Haceb,envio,2890000,7.2,3,El pedido de nevecón Haceb llegó 16 días tarde. Pagué $2.890.000. Quisiera saber por qué no me avisaron.
+T0208,2026-01-20,redes_sociales,Barranquilla,plan de datos móvil,facturacion,59900,12.0,3,Solicito el certificado de pagos de plan de datos móvil del último año.
+T0209,2026-06-20,telefono,Bogotá,licuadora Oster,calidad,,12.1,3,"Excelente calidad de licuadora Oster, superó lo que esperaba."
+T0210,2026-05-01,telefono,Barranquilla,monitor Dell U2723,calidad,1300000,54.2,,monitor Dell U2723 se dañó a los 5 meses de uso. Pagué $1.300.000. Ya escribí varias veces y no responden.
+T0211,2026-01-25,app,Cartagena,monitor Dell U2723,calidad,,7.8,2,"Excelente calidad de monitor Dell U2723, superó lo que esperaba."
+T0212,2026-04-06,web,Medellín,plan de datos móvil,facturacion,59900,87.3,5,Mi factura de plan de datos móvil llegó con un valor distinto al de mi plan. Por favor revisen el cobro.
+T0213,2026-09-05,web,Cartagena,televisor Samsung QLED 55 pulgadas,calidad,2600000,39.2,1,"Excelente calidad de televisor Samsung QLED 55 pulgadas, superó lo que esperaba."
+T0214,2026-08-26,telefono,Bucaramanga,celular Samsung Galaxy,envio,1799000,13.7,,Necesito cambiar la dirección de entrega de mi celular Samsung Galaxy antes de que salga hoy. Pagué $1.799.000.
+T0215,2026-06-10,web,CALI,televisor Samsung QLED 55 pulgadas,calidad,,5.5,1,"Excelente calidad de televisor Samsung QLED 55 pulgadas, superó lo que esperaba."
+T0216,2026-02-02,redes_sociales,Bogotá,suscripción Spotify Premium,facturacion,16900,27.1,5,Mi factura de suscripción Spotify Premium llegó con un valor distinto al de mi plan. Por favor revisen el cobro.
+T0217,2026-07-28,redes_sociales,Bucaramanga,licuadora Oster,calidad,180000,24.5,1,"Excelente calidad de licuadora Oster, superó lo que esperaba. Pagué $180.000."
+T0218,2026-02-06,telefono,Bucaramanga,plan de internet hogar,facturacion,99000,11.5,5,Mi factura de plan de internet hogar llegó con un valor distinto al de mi plan. Pagué $99.000. Por favor revisen el cobro.
+T0219,2026-03-05,tienda,Bucaramanga,lavadora LG WM3900,calidad,,10.9,3,lavadora LG WM3900 llegó con un defecto de fábrica. Quiero cambio o reembolso.
+T0220,2026-03-14,redes_sociales,Bucaramanga,licuadora Oster,calidad,180000,26.2,2,licuadora Oster llegó con un defecto de fábrica. Pagué $180.000. Quiero cambio o reembolso.
+T0221,2026-01-31,web,Bogotá,bicicleta Trek,envio,3200000,23.4,4,Compré bicicleta Trek hace 10 días y aún no me llega. Nadie me da razón del envío.
+T0222,2026-01-19,telefono,Cali,nevecón Haceb,envio,2890000,25.1,4,Compré nevecón Haceb hace 9 días y aún no me llega. Nadie me da razón del envío.
+T0223,2026-04-20,telefono,Bogotá,plan de datos móvil,facturacion,59900,6.0,2,Quiero cancelar plan de datos móvil y me siguen cobrando. Pagué $59.900. Es la 18a vez que escribo.
+T0224,2026-02-20,telefono,Cali,silla ergonómica,envio,650000,15.3,4,Compré silla ergonómica hace 2 días y aún no me llega. Pagué $650.000. Nadie me da razón del envío.
+T0225,2026-03-25,telefono,Bogotá,nevecón Haceb,envio,2890000,16.7,5,Necesito cambiar la dirección de entrega de mi nevecón Haceb antes de que salga hoy. Pagué $2.890.000.
+T0226,2026-07-04,redes_sociales,Bogotá,suscripción Netflix,facturacion,32900,12.6,4,Solicito el certificado de pagos de suscripción Netflix del último año.
+T0227,2026-08-25,redes_sociales,BOGOTÁ,monitor Dell U2723,calidad,,23.2,1,"Excelente calidad de monitor Dell U2723, superó lo que esperaba."
+T0228,17/07/2026,redes_sociales,Bucaramanga,licuadora Oster,calidad,180000,15.0,2,El empaque de licuadora Oster llegó golpeado y el producto tiene rayones. Pagué $180.000.
+T0229,2026-05-25,redes_sociales,Bogotá,seguro de garantía extendida,facturacion,120000,20.9,4,Me cobraron dos veces seguro de garantía extendida este mes. Pagué $120.000. Necesito que me devuelvan uno de los cobros.
+T0230,2026-08-09,app,Bucaramanga,suscripción Spotify Premium,facturacion,16900,41.5,2,Quiero cancelar suscripción Spotify Premium y me siguen cobrando. Pagué $16.900. Es la 5a vez que escribo.
+T0231,2026-08-07,web,barranquilla,portátil Lenovo IdeaPad,envio,2450000,35.1,4,Necesito cambiar la dirección de entrega de mi portátil Lenovo IdeaPad antes de que salga hoy. Pagué $2.450.000.
+T0232,2026-05-13,web,Cartagena,televisor Samsung QLED 55 pulgadas,calidad,2600000,26.7,3,televisor Samsung QLED 55 pulgadas se dañó a los 6 meses de uso. Pagué $2.600.000. Ya escribí varias veces y no responden.
+T0233,2026-05-17,telefono,Cali,celular Samsung Galaxy,envio,1799000,37.8,,Necesito cambiar la dirección de entrega de mi celular Samsung Galaxy antes de que salga hoy. Pagué $1.799.000.
+T0234,2026-06-06,redes_sociales,Barranquilla,garantía de electrodomésticos,otro,,31.2,5,¿Me pueden confirmar el horario de atención de garantía de electrodomésticos?
+T0235,2026-08-20,redes_sociales,Bogotá,silla ergonómica,envio,650000,8.8,5,Necesito cambiar la dirección de entrega de mi silla ergonómica antes de que salga hoy.
+T0236,2026-01-18,app,Bucaramanga,suscripción Netflix,facturacion,32900,12.1,4,Mi factura de suscripción Netflix llegó con un valor distinto al de mi plan. Pagué $32.900. Por favor revisen el cobro.
+T0237,2026-02-26,telefono,Barranquilla,portátil Lenovo IdeaPad,envio,2450000,16.9,,El pedido de portátil Lenovo IdeaPad llegó 20 días tarde. Pagué $2.450.000. Quisiera saber por qué no me avisaron.
+T0238,2026-04-17,web,Barranquilla,nevecón Haceb,envio,2890000,40.7,5,Compré nevecón Haceb hace 7 días y aún no me llega. Pagué $2.890.000. Nadie me da razón del envío.
+T0239,2026-07-08,app,Bogotá,suscripción Spotify Premium,facturacion,16900,22.7,3,Quiero cancelar suscripción Spotify Premium y me siguen cobrando. Pagué $16.900. Es la 18a vez que escribo.
+T0240,2026-04-03,app,Medellín,silla ergonómica,envio,650000,6.7,3,Necesito cambiar la dirección de entrega de mi silla ergonómica antes de que salga hoy. Pagué $650.000.
+T0006,2026-05-25,telefono,Barranquilla,licuadora Oster,calidad,180000,41.4,5,"Excelente calidad de licuadora Oster, superó lo que esperaba. Pagué $180.000."
+T0042,2026-08-12,web,Medellín,router WiFi,soporte_tecnico,,20.6,4,"Excelente servicio, el técnico resolvió el problema de router WiFi en menos de una hora. Muchas gracias."
+T0121,2026-01-31,tienda,Medellín,suscripción Spotify Premium,facturacion,16900,13.1,3,Quiero cancelar suscripción Spotify Premium y me siguen cobrando. Es la 16a vez que escribo.
